@@ -62,7 +62,7 @@ resource "google_compute_instance" "vm_instance" {
   metadata_startup_script = file("apache2_install.sh")
 
 
-  // Don`t work, because of host
+  // Doesn`t work, because of host
 
   /*provisioner "file" {
     source      = "apache2_install.sh"
