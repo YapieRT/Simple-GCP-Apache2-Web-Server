@@ -70,7 +70,7 @@ resource "google_compute_instance" "vm_instance" {
     connection {
       type        = "ssh"
       user        = "terraform"
-      private_key = file("~/terraform/terra_test")
+      private_key = file("~/terraform/<key>")
       host        = "google_compute_instance.vm_instance.public_ip" 
     }
   }
@@ -84,7 +84,7 @@ resource "google_compute_instance" "vm_instance" {
     connection {
       type        = "ssh"
       user        = "terraform"
-      private_key = file("~/terraform/terra_test")
+      private_key = file("~/terraform/<key>")
       host        = "google_compute_instance.vm_instance.public_ip"
     }
   } */
